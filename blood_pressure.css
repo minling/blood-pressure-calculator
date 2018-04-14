@@ -1,0 +1,19 @@
+.blood-pressure-monitor {
+  width: 50%;
+  margin: auto;
+}
+
+.systolic {
+  background-color: LightCoral;
+  height: 100px;
+}
+
+.diastolic {
+  background-color: LightBlue;
+  height: 100px;
+}
+
+.blood-pressure-result {
+  background-color: Green;
+  height: 100px;
+}
