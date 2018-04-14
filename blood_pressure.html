@@ -2,7 +2,8 @@
 
 <html>
   <head>
-    <link rel="stylesheet" href="blood_pressure.css">
+    <link rel="stylesheet" href="stylesheets/blood_pressure.css">
+    <script src="javascripts/blood-pressure.js"></script>
   </head>
   <form action="#" id="blood-pressure-form">
     <div class="blood-pressure-monitor">
@@ -23,17 +24,4 @@
       <input type="button" onclick="calculateBloodPressureResult()" value="Submit">
     </div> 
   </form>
-
-  <script>
-    function calculateBloodPressureResult() {
-      var systolic = document.getElementsByName("systolic")[0].value;
-      var diastolic = document.getElementsByName("diastolic")[0].value;
-      var blood_pressure = calculateBloodPressure(systolic, diastolic)
-      document.getElementById("result").innerHTML = "<div class='blood-pressure-result'> Your Blood Pressure is: " + systolic + "/" + diastolic + "</div>"
-    }
-
-    function calculateBloodPressure(systolic, diastolic){
-      
-    }
-  </script>
 </html>
