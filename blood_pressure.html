@@ -3,36 +3,45 @@
 <html>
 <head>
   <link rel="stylesheet" href="stylesheets/blood_pressure.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
   <script src="javascripts/blood-pressure.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <img src="images/crema-hand-md.png" id="hand">
+  <div class="container">
+  <!-- <img src="images/crema-hand-md.png" id="hand"> -->
   <form action="#" id="blood-pressure-form">
     <div class="blood-pressure-monitor">
       <div class="dot-collection">
         <span class="dot light-blue"></span>
         <span class="dot blue"></span>
         <span class="dot dark-blue"></span>
+        <input type="button" class="submit" onclick="calculateBloodPressureResult()" value="Submit">
       </div>
       <div class="systolic-and-diastolic">
       <div class="systolic">
-        Systolic: 
+        <div class="pressure-title">
+          Systolic: 
+        </div>
         <div>
-          <input type="text" name="systolic"> mmHg
+          <input type="text" name="systolic" class="input"> mmHg
         </div>
       </div>
       <div class="diastolic">
-        Diastolic:
+        <div class="pressure-title">
+          Diastolic:
+        </div>
         <div>
-          <input type="text" name="diastolic"> mmHg
+          <input type="text" name="diastolic" class="input"> mmHg
         </div>
       </div>
       <div id="result">
       </div>
-      <input type="button" onclick="calculateBloodPressureResult()" value="Submit">
     </div>
     </div> 
   </form>
+  </div>
 </body>
 </html>
 

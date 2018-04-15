@@ -1,32 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: powderblue;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  background-image: url("../images/crema-hand-md.png");
+  height: 800px;
+  background-repeat: no-repeat;  
+  background-position: center;
+  background-size: contain;
 }
 
 .blood-pressure-monitor {
-  width: 30%;
-  margin: auto;
+  width: 80%;
+  max-width: 500px;
+  margin-top: 15%;
+  top: 50%;
   position: absolute;
   left: 50%;
-  transform: translate(-50%,0);
+  transform: translate(-50%, -50%);
   border-radius: 25px;
-  border: 2px solid #ababab;
-  padding: 20px;
+  border: 10px solid #e6e6e6;
+  padding: 35px 45px 0px 20px;
   background-color: white;
-}
-
-.systolic-and-diastolic {
-  border-radius: 25px;
-  border: 2px solid #716d6d;
-  padding: 20px;
-  background-color: white;
-  width: 60%;
-  transform: translate(20%, 0);
-  display: inline-block;
 }
 
 .dot-collection {
   margin: auto;
   display: inline-block;
+  width: 15%;
+}
+
+.systolic-and-diastolic {
+  border-radius: 25px;
+  background-color: #bce3ff;
+  transform: translate(5%, -18%);
+  display: inline-block;
+  border: 7px solid #4f6d9a;
+  padding-left: 35px;
+  width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  .blood-pressure-monitor {
+    width: 95%;
+  }
+
+  .dot-collection {
+    width: 23%;
+  }
+
+  .systolic-and-diastolic {
+    width: 75%;
+  }
+}
+
+.pressure-title {
+  padding: 5px;
+}
+
+.input {
+  width: 50%;
+  padding: 12px;
+  border-radius: 6px;
+  margin: 2px;
 }
 
 .light-blue{
@@ -47,17 +88,25 @@ body {
   border-radius: 50%;
   position: relative;
   display: block;
-  margin-bottom: 50px;
+  margin-bottom: 33px;
 }
 
 .systolic {
-  background-color: LightCoral;
+  // background-color: LightCoral;
   height: 100px;
+  // border: 4px solid #716d6d;
+  // border-top-left-radius: 25px;
+  // border-top-right-radius: 25px;
+  // border-bottom: 3px solid #716d6d;;
 }
 
 .diastolic {
-  background-color: LightBlue;
+  // background-color: LightBlue;
   height: 100px;
+  // border: 4px solid #716d6d;
+  // border-bottom-left-radius: 25px;
+  // border-bottom-right-radius: 25px;
+  // border-top: none;
 }
 
 .blood-pressure-result {
