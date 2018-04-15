@@ -109,13 +109,28 @@ body {
   // border-top: none;
 }
 
+#result {
+  height: 10%;
+  width: 80%;
+  max-width: 500px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  padding: 20px 20px 40px 20px;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  border: 10px solid #e6e6e6;
+  background-color: lightyellow;
+}
+
 .blood-pressure-result {
-  background-color: Green;
-  height: 100px;
+  display: -webkit-inline-box;
 }
 
 .blood-pressure-number {
-  height: 50px;
+  margin-left: 25px;
+  color: white;
+  padding: 0px 30px;
 }
 
 .submit {
