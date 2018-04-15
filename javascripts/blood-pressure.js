@@ -1,7 +1,7 @@
 function calculateBloodPressureResult() {
   var systolic = document.getElementsByName("systolic")[0].value;
   var diastolic = document.getElementsByName("diastolic")[0].value;
-  var blood_pressure = calculateBloodPressure(systolic, diastolic)
+  var blood_pressure = calculateBloodPressure(systolic, diastolic);
   document.getElementById("result").innerHTML = "<div class='blood-pressure-result'>Your Blood Pressure is: " + "<div class='blood-pressure-number' style='background-color:" + blood_pressure.color + "'>" + blood_pressure.reading + "</div>" + "</div>"
 }
 

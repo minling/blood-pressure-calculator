@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <link rel="stylesheet" href="stylesheets/blood_pressure.css">
-    <script src="javascripts/blood-pressure.js"></script>
-  </head>
+<head>
+  <link rel="stylesheet" href="stylesheets/blood_pressure.css">
+  <script src="javascripts/blood-pressure.js"></script>
+</head>
+<body>
+  <img src="images/crema-hand-md.png" id="hand">
   <form action="#" id="blood-pressure-form">
     <div class="blood-pressure-monitor">
+      <div class="dot-collection">
+        <span class="dot light-blue"></span>
+        <span class="dot blue"></span>
+        <span class="dot dark-blue"></span>
+      </div>
+      <div class="systolic-and-diastolic">
       <div class="systolic">
         Systolic: 
         <div>
-          <input type="text" name="systolic">
+          <input type="text" name="systolic"> mmHg
         </div>
       </div>
       <div class="diastolic">
         Diastolic:
         <div>
-          <input type="text" name="diastolic">
+          <input type="text" name="diastolic"> mmHg
         </div>
       </div>
       <div id="result">
       </div>
       <input type="button" onclick="calculateBloodPressureResult()" value="Submit">
+    </div>
     </div> 
   </form>
+</body>
 </html>
+
+<!-- make EKG move in the background? -->
