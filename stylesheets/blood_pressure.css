@@ -45,20 +45,6 @@ body {
   width: 80%;
 }
 
-@media screen and (max-width: 600px) {
-  .blood-pressure-monitor {
-    width: 95%;
-  }
-
-  .dot-collection {
-    width: 23%;
-  }
-
-  .systolic-and-diastolic {
-    width: 75%;
-  }
-}
-
 .pressure-title {
   padding: 5px;
 }
@@ -131,6 +117,35 @@ body {
   margin-left: 25px;
   color: white;
   padding: 0px 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .blood-pressure-monitor {
+    width: 95%;
+  }
+
+  .dot-collection {
+    width: 23%;
+  }
+
+  .systolic-and-diastolic {
+    width: 75%;
+  }
+
+  .blood-pressure-result {
+    display: inline-block;
+    margin-left: 14%;
+  }
+
+  .blood-pressure-number {
+    margin-left: 0;
+  }
+
+  #result-box {
+    height: 16%;
+    top: 25%;
+    padding: 20px 20px 70px 20px;
+  }
 }
 
 .submit {
