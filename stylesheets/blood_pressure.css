@@ -148,6 +148,10 @@ body {
   }
 }
 
+.warning {
+  color: red;
+}
+
 .submit {
   background-color: #4CAF50; /* Green */
   border: none;
