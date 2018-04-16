@@ -22,10 +22,7 @@ function calculateBloodPressureResult() {
   }, 1300);
 }
 
-function calculateBloodPressure(systolic_pressure, diastolic_pressure){
-  var systolic = parseInt(systolic_pressure);
-  var diastolic = parseInt(diastolic_pressure);
-
+function calculateBloodPressure(systolic, diastolic){
   if(isNaN(systolic) || isNaN(diastolic)){
     return { reading: 'Please enter valid numbers'};
   }
