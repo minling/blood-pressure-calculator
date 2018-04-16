@@ -65,9 +65,10 @@ body {
 
 .input {
   width: 50%;
-  padding: 12px;
+  padding: 6px;
   border-radius: 6px;
   margin: 2px;
+  font-size: 20px;
 }
 
 .light-blue{
@@ -109,8 +110,7 @@ body {
   // border-top: none;
 }
 
-#result {
-  height: 10%;
+#result-box {
   width: 80%;
   max-width: 500px;
   position: absolute;
